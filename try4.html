@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>My Website</title>
+    <style>
+        /* Add the CSS styling here */
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        nav li {
+            float: left;
+        }
+
+        nav li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav li a:hover {
+            background-color: #111;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <h1>Welcome to My Website</h1>
+    <p>This is a demonstration of a simple navigable page layout using the nav element.</p>
+
+
+    <table>
+        <tr>
+          <th>Month</th>
+          <th>Savings</th>
+        </tr>
+        <tr>
+          <td>January</td>
+          <td>$100</td>
+        </tr>
+        <tr>
+          <td>February</td>
+          <td>$80</td>
+        </tr>
+      </table>
+
+<br>
+
+      <table>
+        <tr>
+          <th scope="col">Month</th>
+          <th scope="col">Savings</th>
+        </tr>
+        <tr>
+          <th scope="row">January</th>
+          <td>$100</td>
+        </tr>
+      </table>
+<br>
+
+<table>
+    <tr>
+      <th>Person</th>
+      <th colspan="2">Details</th>
+    </tr>
+    <tr>
+      <td>John Doe</td>
+      <td>Age: 30</td>
+      <td>Occupation: Developer</td>
+    </tr>
+  </table>
+
+  <br>
+
+
+  <table>
+    <caption>Monthly Savings</caption>
+    <tr>
+      <th scope="col">Month</th>
+      <th scope="col">Savings</th>
+    </tr>
+    <tr>
+      <th scope="row">January</th>
+      <td>$100</td>
+    </tr>
+    <tr>
+      <th scope="row">February</th>
+      <td>$80</td>
+    </tr>
+  </table>
+<br>
+<!-- practice-->
+  <table>
+    <caption>Favourite books</caption>
+    <tr>
+        <th scope="col" colspan="2">book title</th>
+        <th scope="col">author</th>
+        <th scope="col">year</th>
+        <th scope="col">published</th>
+        <th scope="col">genre</th>
+
+    </tr>
+    <tr>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+    </tr>
+
+  </table>
+  <!-- practice ends-->
+<br>
+<br>
+
+
+<form action="/submit-form" method="post">
+    <label for="username">Username:</label>
+<input type="text" id="username" name="username" placeholder="Enter your username">
+
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" placeholder="example@domain.com">
+<input type="submit" value="Submit">
+<!-- <button type="submit">Submit</button> -->
+
+<br>
+<br>
+
+<form action="/submit-form" method="post">
+    <label for="username">Username (4-8 characters):</label>
+    <input type="text" id="username" name="username" required minlength="4" maxlength="8" placeholder="Username">
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required placeholder="example@domain.com">
+
+    <button type="submit">Submit</button>
+</form>
+
+
+</form>
+
+</body>
+</html>

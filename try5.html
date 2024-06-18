@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>My Website</title>
+    <style>
+        /* Add the CSS styling here */
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        nav li {
+            float: left;
+        }
+
+        nav li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav li a:hover {
+            background-color: #111;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+   
+
+
+
+<br>
+
+<h3>Learning Html Forms</h3>
+<p>And the form goes here: </p>
+
+
+<br>
+<br>
+
+<form action="/submit-form" method="post">
+
+    <label for="username">Username (4-8 characters):</label>
+    <input type="text" id="username" name="username" required minlength="4" maxlength="8" placeholder="Username">
+
+    <label for="password">Password:</label>
+    <input type="password" name="password" id="password" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required placeholder="example@domain.com">
+
+    <label for="age">Age</label>
+    <input type="number" name="age" id="age" minlength="1" maxlength="2">
+
+    <label for="terms">Terms of Service</label>
+    <input type="checkbox" name="terms" id="terms" required>
+
+    <button type="submit">Submit</button>
+
+<!-- <input type="submit" value="Submit"> 
+     <button type="submit">Submit</button>
+ -->
+</form>
+
+
+</form>
+
+</body>
+</html>
